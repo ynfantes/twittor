@@ -3,13 +3,13 @@ var swLocation = '/twittor/sw.js';
 
 // registrar el Service Worker
 if (navigator.serviceWorker) {
-    if (url.includes(localhost)) {
+    
+    if (url.includes('localhost')) {
         swLocation = '/sw.js';
     }
     navigator.serviceWorker.register(swLocation);
     
 }
-
 
 // Referencias de jQuery
 
